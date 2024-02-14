@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+        .yellow_block {
+            background-color: yellow;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        .aqua_block {
+            background-color: rgb(46, 199, 173);
+            color: white;
+            padding: 10vh;
+            text-align: center;
+            line-height: 40px;
+        }
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding: 5px;
+            background-color: rgb(28, 22, 22);
+        }
+        li {
+            padding: 12px;
+
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .left_side_block {
+            flex-wrap: wrap;
+            flex: 25%;
+            padding: 15px;
+            background-color: rgb(234, 229, 223);
+        }
+        .right_side_block {
+            flex: 75%;
+            padding: 0px 20px 0px 30px;
+            margin-bottom: 5px
+        }
+        .about_me {
+            padding: 10px 0px 9px 0px;
+        }
+        .img {
+            line-height: 1vh;
+            padding-top: 10px;
+        }
+        .big_img {
+            padding-bottom: 5px;
+        }
+        .More_Text {
+            padding: 20px 0px 20px 0px;
+        }
+        .title_head {
+            padding: 25px 0px 10px 0px;
+        }
+        .title_dec {
+            padding: 10px 0px;
+        }
+        .some_txt {
+            padding-top: 5px;
+        }
+        .txt_content {
+            padding-top: 7px;
+        }
+        .footer {
+            font-size: larger;
+            text-align: center;
+            padding: 25px;
+            height: auto;
+            width: 100%;
+            background-color: antiquewhite;
+        }
+        @media screen and (max-width:650px) {
+            ul {
+                display: block;
+            }
+
+           .left_side_block {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="yellow_block">
+            <strong>Resize the browser window to see the responsive effect.</strong>
+        </div>
+        <div class="aqua_block">
+            <h1>My Website</h1>
+            <p>With a fleible layout</p>
+        </div>
+        <div class="link_block">
+            <ul>
+                <li><a href="Link">Link</a></li>
+                <li><a href="Link">Link</a></li>
+                <li><a href="Link">Link</a></li>
+                <li><a href="Link">Link</a></li>
+            </ul>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="left_side_block">
+            <h2 class="about_me">About Me</h2>
+            <p class="about_me">Photo of me:</p>
+            <img src="/images.jpg" alt="natural_image" width="100%" height="auto" class="big_img">
+            <p class="about_m">Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <h2 class="More_Text">More Text</h2>
+            <p class="about_m">Lorem ipsum dolor sit ame.</p>
+            <div><img src="./images.jpg" alt="natural_image" width="100%" height="auto"></div>
+            <div><img src="./images.jpg" alt="natural_image" width="100%" height="auto"></div>
+            <div><img src="./images.jpg" alt="natural_image" width="100%" height="auto"></div>
+        </div>
+        <div class="right_side_block">
+            <h2 class="title_head">TITLE HEADING</h2>
+            <P class="title_dec">Title description, Dec 7, 2017</P>
+            <img src="/images (1).jpg" alt="natural_image" class="img1" width="100%" height="auto">
+            <p class="some_txt">Some text..</p>
+            <p class="txt_content">Sunt in culpa qui officia deserunt mollit anim id est laborum c
+                onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim v
+                eniam, quis nostrud exercitation ullamco.</p>
+            <h2 class="title_head">TITLE HEADING</h2>
+            <p class="title_dec">Title description, Sep 2, 2017</p>
+            <img src="/images (1).jpg" alt="natural_image" class="img1" width="100%" height="auto">
+            <p class="some_txt">Some text..</p>
+            <p class="txt_content">Sunt in culpa qui officia deserunt mollit anim id est laborum c
+                onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim v
+                eniam, quis nostrud exercitation ullamco.</p>
+        </div>
+    </nav>
+    <footer>
+        <div class="footer"><strong>Footer</strong></div>
+    </footer>
+</body>
+</html>
